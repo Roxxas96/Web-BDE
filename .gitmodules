@@ -1,0 +1,6 @@
+[submodule "front-web-bde"]
+	path = front-web-bde
+	url = https://github.com/Roxxas96/front-web-bde.git
+[submodule "back-web-bde"]
+	path = back-web-bde
+	url = https://github.com/Roxxas96/back-web-bde.git
