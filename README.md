@@ -81,12 +81,12 @@ Int the back project run :
 
 ### Run the reverse proxy
 
-In /infra/proxy run :
+In /infra/docker-compose/proxy run :
 
 ### `docker-compose up -d`
 
 ### Run the application
 
-In /infra/app run :
+In /infra/docker-compose/app run :
 
 ### `docker-compose up -d`

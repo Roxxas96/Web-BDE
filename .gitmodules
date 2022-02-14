@@ -4,3 +4,6 @@
 [submodule "back-web-bde"]
 	path = back-web-bde
 	url = https://github.com/Roxxas96/back-web-bde.git
+[submodule "infra-web-bde"]
+	path = infra-web-bde
+	url = git@github.com:Roxxas96/infra-web-bde.git
