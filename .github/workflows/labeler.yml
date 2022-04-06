@@ -1,0 +1,24 @@
+name: Auto label PR
+
+on: pull_request
+
+jobs:
+  labeler:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: write
+
+    steps:
+      - uses: actions/labeler@v4
+        if: ${{gitbub.base_ref == "main-v1"}}
+        name: Label v1 PR
+        with:
+          repo-token: "${{ secrets.GITHUB_TOKEN }}"
+          v1: "*"
+      - uses: actions/labeler@v4
+        if: ${{gitbub.base_ref == "main-v2"}}
+        name: Label v2 PR
+        with:
+          repo-token: "${{ secrets.GITHUB_TOKEN }}"
+          v2: "*"
