@@ -1,0 +1,15 @@
+name: Commit Message Check
+on: pull_request
+
+env:
+  error_msg: |+
+    Your commit message does not follow the conventional commit message format.
+    Please see https://conventionalcommits.org/ for more information.
+jobs:
+  commit-message-check:
+    runs-on: ubuntu-latest
+    name: Commit Message Check
+    steps:
+      - uses: actions/checkout@v2
+      - name: Check Conventional Commits
+        uses: webiny/action-conventional-commits@v1.0.3
